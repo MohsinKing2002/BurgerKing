@@ -1,0 +1,250 @@
+/********************************** Css reset *******************************************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow-x: hidden;
+  background-color: #ffc000 !important;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+
+.title{
+  text-align: center;
+  color: darkblue;
+  letter-spacing: 2.5px;
+  font-weight: 600;
+}
+
+/********************************** Header *******************************************/
+.nav-link{
+  margin: 0 30px;
+  font-size: 20px !important;
+}
+
+/********************************** Home *******************************************/
+.home{
+  height: 92vh;
+  line-height: 4;
+  background: url("https://img.freepik.com/premium-photo/flat-lay-burgers-with-french-fries_23-2148235038.jpg?w=2000") no-repeat center center;
+  background-size: 100%;
+}
+.home img{
+  height: 55vh;
+}
+
+/********************************** Menu  *******************************************/
+.menu-items{
+  flex-wrap: wrap;
+}
+.card-title{
+  letter-spacing: 1px;
+}
+
+/********************************** About *******************************************/
+.about{
+  line-height: 2;
+  color: #3e2d33;
+  font-size: 17px;
+}
+
+.about img{
+  margin: 1rem 0;
+  height: 30vh;
+  width: auto;
+  border-radius: 50%;
+}
+
+/********************************** Contact *******************************************/
+.contact{
+  line-height: 2.5;
+}
+
+.contact_form{
+  width: 25%;
+}
+
+/********************************** Cart *******************************************/
+.login_btn{
+      color: indigo;
+        width: 100%;
+        outline: none;
+        border: none;
+        background: transparent;
+}
+
+
+/********************************** Cart *******************************************/
+.cart, .shipping, .register, .myorder, .dashboard{
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+}
+
+.item-info{
+  justify-content: space-evenly;
+}
+
+.item-info input{
+  width: 4vw;
+  text-align: center;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.item-info input::-webkit-inner-spin-button,
+.item-info input::-webkit-outer-spin-button
+{
+  display: none;
+}
+
+/********************************** Shipping *******************************************/
+.shipping, .register, .account{
+  width: 35%;
+}
+.heading{
+  font-size: 20px;
+}
+
+/********************************** Confirm Order *******************************************/
+
+.confirmOrder .form-label{
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: darkslateblue;
+  margin: 0 !important;
+}
+.confirmOrder form{
+  width: 60%;
+}
+
+/********************************** Dashboard *******************************************/
+.chart {
+  width: 50%;
+}
+.box{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    justify-content: center;
+    background: orange;
+    color: white;
+}
+
+/********************************** Layout *******************************************/
+.loader{
+  border: 3px dashed azure;
+  padding: 3rem;
+  border-radius: 50%;
+}
+
+
+/********************************** Responsive reset *******************************************/
+@media screen and (max-width: 1000px) {
+  .row .text-primary{
+    margin-bottom: 15px !important;
+  }
+  /****************** Header *****************/
+  .navbar-expand-sm{
+    flex-wrap: wrap !important;
+  }
+ .offcanvas-end {
+   width: 300px !important;
+ }
+
+  /****************** Home *****************/
+  .home{
+    background-size: auto;
+  }
+
+  .homepage, .contact .ms-5{
+    margin-left: 1.1rem !important;
+  }
+
+  /****************** About *****************/
+  .about .ms-5{
+    margin-left: 0 !important;
+  }
+  .about .card-body{
+    background-color: rgb(244, 255, 240);
+  }
+
+  /****************** Contact, Account, Shipping, Register *****************/
+  .contact_form, .account, .shipping, .register{
+    width: 90%;
+  }
+
+  /****************** Cart *****************/
+  .cart .start-50{
+    left: 0 !important;
+  }
+
+  .cart,
+  .myorder{
+    width: 95%;
+    overflow: auto;
+  }
+
+  .confirmOrder form{
+    width: 80%;
+  }
+
+  /****************** Dashboard *****************/
+  .dashboard{
+    width: auto;
+  }
+
+  .dashboard .w-25{
+    width: 90% !important;
+  }
+
+  .chart{
+    width: 90% !important;
+  }
+
+  .boxes{
+    flex-direction: column;
+  }
+  .box{
+    margin: 10px 0;
+    height: 160px;
+    width: 160px;
+  }
+  .item-info{
+    justify-content: space-between;
+  }
+
+  .item-info input{
+    width: 10vw;
+  }
+
+  /****************** Footer *****************/
+  .footer .container{
+    flex-wrap: wrap !important;
+  }
+
+  .footer .navbar-brand{
+    margin: 0.5rem 0 1rem 0;
+  }
+
+  .footer h6{
+    margin-top: 1rem;
+  }
+}
